@@ -106,4 +106,22 @@ console.log(weatherForecast[2].conditions);
 console.log(weatherForecast[2].astronomy.sunset);
 
 // Use string template literals to build few sentences about the weather forecast for Sunday. (Example: "The high on Sunday will be 47 and the low will be 35. We're predicting a chance of rain. The sun will rise at 7:45 AM and set at 5:07 PM.")
-console.log(`The high for Sunday will be ${weatherForecast[2].temperature.high} degrees, and the low will be ${weatherForecast[2].temperature.low} degrees. There will be a ${weatherForecast[2].conditions}. The sun will rise at ${weatherForecast[2].astronomy.sunrise}, and the sun will set at ${weatherForecast[2].astronomy.sunset}.`);
+
+// console.log(`The high for Sunday will be ${weatherForecast[2].temperature.high} degrees, and the low will be ${weatherForecast[2].temperature.low} degrees. There will be a ${weatherForecast[2].conditions}. The sun will rise at ${weatherForecast[2].astronomy.sunrise}, and the sun will set at ${weatherForecast[2].astronomy.sunset}.`);
+
+let williamGrades = [62, 97, 99, 85, 73, 97];
+
+// Print the first grade in the array to the console.
+console.log(williamGrades[0]);
+
+// Print the last grade in the array to the console.
+console.log(williamGrades[5]);
+
+// Use JavaScript to find William's average grade.
+let total = 0;
+for(let i = 0; i < williamGrades.length; i++) {
+    total += williamGrades[i];
+}
+let average = total / williamGrades.length;
+console.log(average);
+console.log(Math.floor(average));
